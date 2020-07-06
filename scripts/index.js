@@ -1,6 +1,6 @@
 let isAlreadyCalling = false;
 let getCalled = false;
-
+const uurl="146.101.196.20:5000";
 const existingCalls = [];
 
 const { RTCPeerConnection, RTCSessionDescription } = window;
@@ -63,7 +63,7 @@ function updateUserList(socketIds) {
   });
 }
 
-const socket = io.connect("46.101.196.20:5000");
+const socket = io.connect(uurl);
 
 socket.on("update-user-list", ({ users }) => {
   updateUserList(users);
