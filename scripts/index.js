@@ -63,7 +63,7 @@ function updateUserList(socketIds) {
   });
 }
 
-const socket = io.connect("localhost:5000");
+const socket = io.connect("elated-kepler-9a298b.netlify.app:5000");
 
 socket.on("update-user-list", ({ users }) => {
   updateUserList(users);
