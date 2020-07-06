@@ -1,6 +1,6 @@
 let isAlreadyCalling = false;
 let getCalled = false;
-const uurl="146.101.196.20:5000";
+const uurl="http://46.101.196.20:5000";
 const existingCalls = [];
 
 const { RTCPeerConnection, RTCSessionDescription } = window;
